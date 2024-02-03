@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		D732D5D52B6E1F070037902A /* My_SparApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D732D5D42B6E1F070037902A /* My_SparApp.swift */; };
-		D732D5D72B6E1F070037902A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D732D5D62B6E1F070037902A /* ContentView.swift */; };
 		D732D5D92B6E1F080037902A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D732D5D82B6E1F080037902A /* Assets.xcassets */; };
 		D732D5DC2B6E1F080037902A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D732D5DB2B6E1F080037902A /* Preview Assets.xcassets */; };
+		D732D5E62B6E1F4E0037902A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D732D5E52B6E1F4E0037902A /* Product.swift */; };
+		D732D5E82B6E1F6B0037902A /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D732D5E72B6E1F6B0037902A /* ProductViewModel.swift */; };
+		D732D5EA2B6E1F800037902A /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D732D5E92B6E1F800037902A /* ProductView.swift */; };
+		D732D5EE2B6E22220037902A /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = D732D5ED2B6E22220037902A /* Review.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D732D5D12B6E1F070037902A /* My_Spar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My_Spar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D732D5D42B6E1F070037902A /* My_SparApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_SparApp.swift; sourceTree = "<group>"; };
-		D732D5D62B6E1F070037902A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D732D5D82B6E1F080037902A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D732D5DB2B6E1F080037902A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D732D5E52B6E1F4E0037902A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		D732D5E72B6E1F6B0037902A /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		D732D5E92B6E1F800037902A /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		D732D5ED2B6E22220037902A /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,10 @@
 		D732D5D32B6E1F070037902A /* My_Spar */ = {
 			isa = PBXGroup;
 			children = (
+				D732D5E42B6E1F2C0037902A /* View */,
+				D732D5E32B6E1F200037902A /* ViewModel */,
+				D732D5E22B6E1F150037902A /* Model */,
 				D732D5D42B6E1F070037902A /* My_SparApp.swift */,
-				D732D5D62B6E1F070037902A /* ContentView.swift */,
 				D732D5D82B6E1F080037902A /* Assets.xcassets */,
 				D732D5DA2B6E1F080037902A /* Preview Content */,
 			);
@@ -65,6 +73,31 @@
 				D732D5DB2B6E1F080037902A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D732D5E22B6E1F150037902A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D732D5E52B6E1F4E0037902A /* Product.swift */,
+				D732D5ED2B6E22220037902A /* Review.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D732D5E32B6E1F200037902A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D732D5E72B6E1F6B0037902A /* ProductViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D732D5E42B6E1F2C0037902A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D732D5E92B6E1F800037902A /* ProductView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D732D5D72B6E1F070037902A /* ContentView.swift in Sources */,
+				D732D5EE2B6E22220037902A /* Review.swift in Sources */,
+				D732D5EA2B6E1F800037902A /* ProductView.swift in Sources */,
 				D732D5D52B6E1F070037902A /* My_SparApp.swift in Sources */,
+				D732D5E82B6E1F6B0037902A /* ProductViewModel.swift in Sources */,
+				D732D5E62B6E1F4E0037902A /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
